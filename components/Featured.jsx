@@ -4,11 +4,7 @@ import { useState } from "react";
 const Featured = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
-  const images = [
-    "/img/featured.jpg",
-    "/img/featured1.jpg",
-    "/img/featured2.jpg",
-  ];
+  const images = ["/img/pizza1.png", "/img/pizza3.png", "/img/pizza2.png"];
   const sliderHandler = (direction) => {
     if (direction === "l") {
       setIndex(index !== 0 ? index - 1 : 2);
