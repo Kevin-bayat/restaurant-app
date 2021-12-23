@@ -1,0 +1,29 @@
+.Container {
+  height: calc(100vh - 100px);
+  background-color: #333232;
+  display: flex;
+}
+.Item {
+  flex: 1;
+  position: relative;
+  display: flex;
+}
+.Item:last-child {
+  flex: 2;
+  justify-content: space-between;
+  padding: 50px;
+}
+.Card {
+  flex: 1;
+  padding: 30px;
+}
+.Title {
+  color: #b7903c;
+  font-size: 18px;
+}
+.Text {
+  color: #b2afaf;
+}
+.Motto {
+  color: rgb(211, 211, 211);
+}

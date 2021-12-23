@@ -1,0 +1,21 @@
+.Container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+.Title {
+  font-weight: 500;
+}
+.Desc {
+  font-size: 24px;
+  color: #444;
+  width: 70%;
+}
+.Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
