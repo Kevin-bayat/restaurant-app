@@ -8,6 +8,12 @@ const Footer = () => {
       </div>
       <div className={styles.Item}>
         <div className={styles.Card}>
+          <Image
+            src={"/img/kiwi-logo-footer.png"}
+            alt={""}
+            width={200}
+            height={100}
+          />
           <h2 className={styles.Motto}>We Are Kiwi Pizza.</h2>
         </div>
         <div className={styles.Card}>

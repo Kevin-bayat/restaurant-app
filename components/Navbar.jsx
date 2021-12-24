@@ -18,7 +18,12 @@ const Navbar = () => {
           <li className={styles.ListItem}>HomePage</li>
           <li className={styles.ListItem}>Products</li>
           <li className={styles.ListItem}>Menu</li>
-          <Image src={"/img/logo.png"} height={69} width={160} alt={""} />
+          <Image
+            src={"/img/kiwi-logo-white.png"}
+            height={69}
+            width={160}
+            alt={""}
+          />
           <li className={styles.ListItem}>Events</li>
           <li className={styles.ListItem}>Blogs</li>
           <li className={styles.ListItem}>Contacts</li>

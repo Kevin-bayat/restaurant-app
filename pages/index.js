@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <title>Kiwi Restaurant</title>
         <meta name="description" content="Best Restaurant in Tehran City" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/img/pizza-favicon.png" />
       </Head>
       <Featured />
       <PizzaList />
