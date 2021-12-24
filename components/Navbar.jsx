@@ -1,7 +1,9 @@
 import styles from "../styles/Navbar.module.css";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const router = useRouter();
   return (
     <div className={styles.Container}>
       <div className={styles.Item}>
@@ -15,8 +17,15 @@ const Navbar = () => {
       </div>
       <div className={styles.Item}>
         <ul className={styles.List}>
-          <li className={styles.ListItem}>HomePage</li>
-          <li className={styles.ListItem}>Products</li>
+          <li className={styles.ListItem} onClick={() => router?.push("/")}>
+            HomePage
+          </li>
+          <li
+            className={styles.ListItem}
+            onClick={() => router?.push("#products")}
+          >
+            Products
+          </li>
           <li className={styles.ListItem}>Menu</li>
           <Image
             src={"/img/kiwi-logo-white.png"}
@@ -26,7 +35,12 @@ const Navbar = () => {
           />
           <li className={styles.ListItem}>Events</li>
           <li className={styles.ListItem}>Blogs</li>
-          <li className={styles.ListItem}>Contacts</li>
+          <li
+            className={styles.ListItem}
+            onClick={() => router.push("#footer")}
+          >
+            Contacts
+          </li>
         </ul>
       </div>
       <div className={styles.Item}>

@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useState } from "react";
 const Featured = () => {
   const [index, setIndex] = useState(0);
-  console.log(index);
   const images = ["/img/pizza1.png", "/img/pizza3.png", "/img/pizza2.png"];
   const sliderHandler = (direction) => {
     if (direction === "l") {
@@ -14,7 +13,7 @@ const Featured = () => {
   };
 
   return (
-    <div className={styles.Container}>
+    <div className={styles.Container} id={"homePage"}>
       <div
         className={styles.arrowContainer}
         style={{ left: 0 }}

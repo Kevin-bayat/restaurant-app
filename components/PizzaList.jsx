@@ -3,8 +3,8 @@ import PizzaCard from "./PizzaCard";
 
 const PizzaList = () => {
   return (
-    <div className={styles.Container}>
-      <h1 className={styles.Title}>Best Pizza Restaurant in Tehram</h1>
+    <div className={styles.Container} id={"products"}>
+      <h1 className={styles.Title}>Best Pizza Restaurant in Tehran</h1>
 
       <p className={styles.Desc}>
         lorem ipsum dollar sit amet , lorem ipsum dollar sit amet ,lorem ipsum

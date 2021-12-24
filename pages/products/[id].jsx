@@ -1,6 +1,7 @@
 import styles from "../../styles/Products.module.css";
 import Image from "next/image";
 import { useState } from "react";
+import { router } from "next/client";
 
 const Products = () => {
   const [size, setSize] = useState(0);
@@ -79,7 +80,14 @@ const Products = () => {
             id={"number"}
             defaultValue={1}
           />
-          <button className={styles.Button}>Add To Cart</button>
+          <button
+            className={styles.Button}
+            onClick={() =>
+              router.push(`/orders/${Math.random().toFixed(2) * 100}`)
+            }
+          >
+            Add To Cart
+          </button>
         </div>
       </div>
     </div>
