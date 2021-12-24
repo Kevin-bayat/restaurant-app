@@ -1,0 +1,159 @@
+.Container {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  padding: 20px;
+}
+
+.Left {
+  flex: 1;
+}
+.Right {
+  flex: 1;
+}
+.ImgContainer {
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+.Price {
+  font-size: 18px;
+  font-weight: 400;
+  border-bottom: 1px solid #d1411e;
+  color: #d1411e;
+  width: 6%;
+}
+.Desc {
+  font-size: 18px;
+  color: #444444;
+  font-weight: 500;
+}
+.Sizes {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.Size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.Size:nth-child(2) {
+  width: 40px;
+  height: 40px;
+}
+.Size:last-child {
+  width: 50px;
+  height: 50px;
+}
+.Number {
+  font-size: 12px;
+  position: absolute;
+  top: -5px;
+  right: -20px;
+  border-radius: 10px;
+  background-color: #036060;
+  padding: 0 5px;
+  color: #fff;
+}
+.Ingredients {
+  display: flex;
+  margin-bottom: 30px;
+}
+.Option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.Checkbox {
+  width: 20px;
+  height: 20px;
+}
+.Add {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.Quantity {
+  width: 20%;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #036060;
+}
+.Button {
+  width: 20%;
+  padding: 10px;
+  color: #fff;
+  background-color: #d1411e;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Button:hover {
+  color: #fff;
+  background-color: #8d2811;
+  transition: all 0.4s ease-in-out;
+}
+@media screen and (max-width: 480px) {
+  .Container {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  .ImgContainer {
+    width: 90vw;
+    height: 70vh;
+    justify-content: center;
+  }
+  .Sizes {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .Ingredients {
+    flex-direction: column;
+  }
+  .Option {
+    justify-content: flex-start;
+    font-size: 20px;
+    padding-left: 40px;
+  }
+  .Checkbox {
+    width: 25px;
+    height: 25px;
+  }
+  .Price {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .Add {
+    flex-direction: row;
+    width: 100%;
+    margin: 0 40px;
+  }
+  .Button,
+  .Quantity {
+    height: 30px;
+    text-align: center;
+    padding: 5px 10px;
+  }
+  .Button {
+    width: 40%;
+    margin-left: 10px;
+  }
+  .Extras,
+  .Quantity,
+  .Price {
+    font-size: 22px;
+  }
+}

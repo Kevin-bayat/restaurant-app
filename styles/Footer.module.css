@@ -27,3 +27,21 @@
 .Motto {
   color: rgb(211, 211, 211);
 }
+@media screen and (max-width: 480px) {
+  .Container {
+    height: auto;
+    text-align: center;
+  }
+  .Item:first-child {
+    display: none;
+  }
+  .Item:last-child {
+    flex-direction: column;
+  }
+  .Motto {
+    font-size: 20px;
+  }
+  .Title {
+    font-size: 24px;
+  }
+}

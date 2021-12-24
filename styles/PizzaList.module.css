@@ -19,3 +19,15 @@
   flex-wrap: wrap;
   width: 100%;
 }
+@media screen and (max-width: 480px) {
+  .Title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .Desc {
+    text-align: left;
+    width: 90%;
+    font-size: 22px;
+  }
+}

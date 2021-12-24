@@ -1,0 +1,118 @@
+.Container {
+  display: flex;
+  padding: 50px;
+}
+.Left {
+  flex: 2;
+}
+.Right {
+  flex: 1;
+}
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  max-height: 300px;
+  background-color: #444444;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 5px;
+}
+.TotalTextTitle {
+  padding-right: 10px;
+}
+.Button {
+  height: 30px;
+  margin: 20px 0;
+  background-color: #fff;
+  border: none;
+  padding: 5px 10px;
+  color: teal;
+  font-weight: bold;
+  cursor: not-allowed;
+  border-radius: 5px;
+}
+
+.Table {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.Row:last-child {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.Done {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.InProgress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: InProgress 1s ease-in-out infinite alternate;
+}
+@keyframes InProgress {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.UnDone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.3;
+}
+.UnDone .CheckedIcon,
+.InProgress .CheckedIcon {
+  display: none;
+}
+.CheckedIcon {
+  margin-top: 10px;
+}
+@media screen and (max-width: 480px) {
+  .Container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .Wrapper {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .TrTitle {
+    display: none;
+  }
+  .Tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Row:last-child {
+    width: 100%;
+  }
+
+  .Id::before {
+    content: "ID: ";
+    font-weight: bold;
+  }
+  .Name::before {
+    content: "Name: ";
+    font-weight: bold;
+  }
+  .Address::before {
+    content: "Address: ";
+    font-weight: bold;
+  }
+  .Total::before {
+    content: "TotalPrice: ";
+    font-weight: bold;
+  }
+}

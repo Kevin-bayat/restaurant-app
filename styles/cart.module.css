@@ -1,0 +1,118 @@
+.Container {
+  display: flex;
+  padding: 50px;
+  height: calc(100vh - 100px);
+}
+
+.Left {
+  flex: 2;
+}
+.Right {
+  flex: 1;
+}
+.ImgContainer {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.Table {
+  width: 100%;
+  border-spacing: 20px;
+}
+.Name {
+  font-weight: 500;
+  font-size: 18px;
+  color: #d1411e;
+}
+.Total {
+  font-weight: 500;
+  font-size: 19px;
+}
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  max-height: 300px;
+  background-color: #444444;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 5px;
+}
+.TotalTextTitle {
+  padding-right: 10px;
+}
+.Button {
+  height: 30px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: none;
+  padding: 5px 10px;
+  color: #d1411e;
+  cursor: pointer;
+  border-radius: 5px;
+}
+@media screen and (max-width: 480px) {
+  .Container {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+  .Right {
+    margin-top: 10px;
+  }
+  .Left {
+    text-align: center;
+  }
+  .Table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .TrTitle {
+    display: none;
+  }
+  .Tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .Wrapper {
+    width: 100%;
+    margin: 5px auto;
+    padding: 15px;
+  }
+  .ImgContainer {
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+  }
+  .Name,
+  .Total {
+    font-size: 24px;
+  }
+  .Extras,
+  .Quantity,
+  .Price {
+    font-size: 22px;
+  }
+  .Price::before {
+    content: "Price: ";
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .Quantity::before {
+    content: "Quantity: ";
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .Total::before {
+    content: "TotalPrice: ";
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .TotalPrice {
+    color: #d1411e;
+  }
+}
